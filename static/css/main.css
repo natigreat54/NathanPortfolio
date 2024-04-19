@@ -78,20 +78,83 @@
   
   .common_link__nav:hover {
     background-color: var(--white2);
-    color: #333333;
+    color: var(--gray9);
   }
-.home_main_content {
+  .footer {
+    border: 2px solid var(--gray8);
+    background-color: var(--gray9);
+    border-radius: 999px;
+    padding: 20px;
     text-align: center;
-    margin-top: 50px;
-}
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer_links {
+    margin-top: 10px;
+  }
+  .footer_links a {
+      color: var(--gray2);
+      text-decoration: none;
+      margin: 0 10px;
+  }
+  .home_main_content {
+      text-align: center;
+      margin-top: 100px;
+      justify-content: center;
+  }
+  .home_title {
+      font-size: 32px;
+      font-weight: bold;
+  }
+  .home_main_content p {
+      font-size: 18px;
+      line-height: 1.6;
+  }
 
-.home_main_content h1 {
-    font-size: 36px;
-    color: var(--white1); /* Adjust the color as needed */
+  .resume_container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
 }
-
-.home_main_content p {
-    font-size: 18px;
-    color: var(--white2); /* Adjust the color as needed */
+.resume_section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    color: var(--gray3);
+}
+.resume_heading {
+    grid-column: 1 / -1;
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 20px;
+}
+.resume_section_title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd; /* Add border bottom for title */
+  padding-bottom: 10px; /* Add padding bottom for title */
+}
+.resume_job_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.resume_date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+.resume_skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+.resume_skills li {
+    margin-bottom: 5px;
 }
